@@ -6,8 +6,7 @@ import java.util.Map;
 
 @IFMLLoadingPlugin.TransformerExclusions({
     "mods.betterfoliage.loader",
-    "mods.octarinecore.metaprog",
-    "kotlin"
+    "mods.octarinecore.metaprog"
 })
 @IFMLLoadingPlugin.MCVersion("1.12.2")
 @IFMLLoadingPlugin.SortingIndex(1400)
