@@ -1,6 +1,6 @@
 [{
-  "modid": "betterfoliage",
-  "name": "Better Foliage",
+  "modid": "$mod_id",
+  "name": "$mod_name",
   "version": "$version",
   "mcversion": "$mcversion",
   "description": "Leafier leaves and grassier grass",
