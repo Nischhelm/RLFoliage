@@ -16,8 +16,8 @@ private val OBSOLETE = ObsoleteConfigProperty()
 private fun featureEnable() = boolean(true).lang("enabled")
 fun biomeList(defaults: (Biome) -> Boolean) = intList {
     Biome.REGISTRY
-        .filter { it != null && defaults(it) }
-        .map { Biome.REGISTRY.getIDForObject(it) }
+        .filter { it != null && defaults(it as Biome) }
+        .map { Biome.REGISTRY.getIDForObject(it as Biome?) }
         .toTypedArray()
 }.apply { guiClass = BiomeListConfigEntry::class.java }
 
