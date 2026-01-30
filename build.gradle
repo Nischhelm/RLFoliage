@@ -57,7 +57,7 @@ minecraft {
 
 repositories {
     maven { url = "https://www.cursemaven.com" }
-    maven { url = "https://maven.shadowfacts.net" }
+    maven { url = 'https://ecdcaeb.github.io/maven/' }
 }
 
 dependencies {
@@ -69,6 +69,7 @@ dependencies {
     annotationProcessor "io.github.llamalad7:mixinextras-common:${mixin_extras_version}"
 
     implementation fg.deobf("curse.maven:shadowfacts-forgelin-${forgelin_version}")
+    implementation fg.deobf("net.optifine:optifine:1.12.2-HD_U_G5_unpatched_srg")
 }
 
 mixin {
